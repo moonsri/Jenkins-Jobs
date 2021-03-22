@@ -1,0 +1,56 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.8">
+  <actions>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>com.example.maven-project:maven-project:pom.xml</string>
+          <string>79cac9be09ca49f3dc6b276a2711b510</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>com.example.maven-project</groupId>
+        <artifactId>maven-project</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>maven-project-1.0-SNAPSHOT.pom</canonicalName>
+        <md5sum>79cac9be09ca49f3dc6b276a2711b510</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1614234600498</timestamp>
+  <startTime>1614234620026</startTime>
+  <result>SUCCESS</result>
+  <duration>8827</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/test-FirstMavenProject</workspace>
+  <executedMojos class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-clean-plugin</artifactId>
+      <version>2.4.1</version>
+      <goal>clean</goal>
+      <executionId>default-clean</executionId>
+      <duration>1189</duration>
+      <digest>039798515986413679ca6ddda1a8b5ec</digest>
+    </hudson.maven.ExecutedMojo>
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-install-plugin</artifactId>
+      <version>2.3.1</version>
+      <goal>install</goal>
+      <executionId>default-install</executionId>
+      <duration>2583</duration>
+      <digest>0a88f9ddf7468ed10aa3a19a153f32c0</digest>
+    </hudson.maven.ExecutedMojo>
+  </executedMojos>
+</hudson.maven.MavenBuild>

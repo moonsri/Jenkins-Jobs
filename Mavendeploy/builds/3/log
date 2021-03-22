@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4GsleeZ5cVhtI6J4A16FiXEsQEcwCnQYnRp6d4uKEfrmAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2AzIJUoI2pBUX5WanJJfoAHehVUcoAAAA=[0mPipelineproject" build number [8mha:////4ClxgXL/y8BRWuR+kqmPEU42Xr9C0DLRmfbhXVzemCe1AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YDMglSgjakFRflZqckl+iYAOevzjMsAAAA=[0m4
+originally caused by:
+ Started by user [8mha:////4I6rgZuoPcSzDBRN+mvWZMUjq+8ZNr6iB7jHwi4w6eWjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4JVTLXsiePmDy07fpMrer2RN1SFEAEUyU2qzmur0vCoUAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 in workspace /home/jenkins/workspace/Mavendeploy
+ERROR: Unable to find project for artifact copy: test-FirstMavenProject
+This may be due to incorrect project name or permission settings; see help for project name in job configuration.
+[DeployPublisher][INFO] Build failed, project not deployed
+Finished: FAILURE

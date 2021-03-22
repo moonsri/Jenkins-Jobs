@@ -1,0 +1,19 @@
+Started by user [8mha:////4I6rgZuoPcSzDBRN+mvWZMUjq+8ZNr6iB7jHwi4w6eWjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test-freestylejob
+[test-freestylejob] $ /bin/sh -xe /tmp/jenkins1993349693407375825.sh
++ echo 'Welcome to Jenkins'
+Welcome to Jenkins
++ echo 'This is first test job jenkins'
+This is first test job jenkins
++ systemctl status jenkins
+● jenkins.service - LSB: Jenkins Automation Server
+   Loaded: loaded (/etc/rc.d/init.d/jenkins; bad; vendor preset: disabled)
+   Active: active (running) since Wed 2021-02-24 21:47:56 UTC; 7h ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 690 ExecStart=/etc/rc.d/init.d/jenkins start (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/jenkins.service
+           ├─1947 /etc/alternatives/java -Dcom.sun.akuma.Daemon=daemonized -Djava.awt.headless=true -DJENKINS_HOME=/var/lib/jenkins -jar /usr/lib/jenkins/jenkins.war --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war --daemon --httpPort=8080 --debug=5 --handlerCountMax=100 --handlerCountMaxIdle=20
+           ├─3214 /bin/sh -xe /tmp/jenkins1993349693407375825.sh
+           └─3215 systemctl status jenkins
+Finished: SUCCESS

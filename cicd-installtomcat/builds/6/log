@@ -1,0 +1,82 @@
+Started by upstream project "[8mha:////4EECz5ctOOGLrF6Kg/RNTglK13lG2U08qcFLD32XJuNaAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgY5/az8JH23zKLiEmdPZ5eAzIJUoNWpBUX5WanJJfoA6PaNndMAAAA=[0mFirstCICDPipelineproject" build number [8mha:////4E9Uf1BmX3uXUGChCX+tic9EITrHdFLEAq8ZQsa34ivnAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnn9rPwkfbfMouISZ09nl4DMglSg1akFRflZqckl+qYAPjsGkdQAAAA=[0m5
+originally caused by:
+ Started by user [8mha:////4I6rgZuoPcSzDBRN+mvWZMUjq+8ZNr6iB7jHwi4w6eWjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/cicd-installtomcat
+[cicd-installtomcat] $ ansible-playbook /var/lib/jenkins/ansibleproject/tomcat_install_final.yml -i /var/lib/jenkins/ansibleproject/hosts -f 5 --vault-password-file /var/lib/jenkins/workspace/cicd-installtomcat/vault6825417252627490062.password
+
+PLAY [webserver] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.2.30]
+
+TASK [Install tomcat tomcat-webapps tomcat-admin-webapps tomcat-docs-webapp] ***
+ok: [192.168.2.30]
+
+TASK [Start the tomcat service] ************************************************
+ok: [192.168.2.30]
+
+TASK [Check the presence of tomcat-usr.xml] ************************************
+ok: [192.168.2.30]
+
+TASK [debug] *******************************************************************
+ok: [192.168.2.30] => {
+    "tomcat_config": {
+        "changed": false, 
+        "failed": false, 
+        "stat": {
+            "atime": 1616449261.8377097, 
+            "attr_flags": "", 
+            "attributes": [], 
+            "block_size": 4096, 
+            "blocks": 8, 
+            "charset": "us-ascii", 
+            "checksum": "5e0f5e94c4d7d33190001852c6d2587faa814b6e", 
+            "ctime": 1616449260.7547014, 
+            "dev": 2049, 
+            "device_type": 0, 
+            "executable": false, 
+            "exists": true, 
+            "gid": 53, 
+            "gr_name": "tomcat", 
+            "inode": 101307398, 
+            "isblk": false, 
+            "ischr": false, 
+            "isdir": false, 
+            "isfifo": false, 
+            "isgid": false, 
+            "islnk": false, 
+            "isreg": true, 
+            "issock": false, 
+            "isuid": false, 
+            "mimetype": "application/xml", 
+            "mode": "0640", 
+            "mtime": 1616449260.7497015, 
+            "nlink": 1, 
+            "path": "/usr/share/tomcat/conf/tomcat-users.xml", 
+            "pw_name": "root", 
+            "readable": true, 
+            "rgrp": true, 
+            "roth": false, 
+            "rusr": true, 
+            "size": 2409, 
+            "uid": 0, 
+            "version": "1394247012", 
+            "wgrp": false, 
+            "woth": false, 
+            "writeable": true, 
+            "wusr": true, 
+            "xgrp": false, 
+            "xoth": false, 
+            "xusr": false
+        }
+    }
+}
+
+TASK [Update tomcat-usr.xml file] **********************************************
+ok: [192.168.2.30]
+
+PLAY RECAP *********************************************************************
+192.168.2.30               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS

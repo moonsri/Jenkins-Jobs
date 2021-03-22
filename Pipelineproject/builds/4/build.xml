@@ -1,0 +1,72 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.40">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.18">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause plugin="pipeline-build-step@2.13">
+          <id>Mavendeploy#3</id>
+        </org.jenkinsci.plugins.workflow.support.steps.build.DownstreamFailureCause>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>33</queueId>
+  <timestamp>1614994404147</timestamp>
+  <startTime>1614994404179</startTime>
+  <result>FAILURE</result>
+  <duration>99860</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>stage(&apos;Build&apos;) {
+    build &apos;test-FirstMavenProject&apos;
+}
+stage(&apos;Deploy&apos;) {
+    build &apos;Mavendeploy&apos;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>678328071</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>2204751023</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2637186612</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2257536214</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>537905726</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>13</iota>
+    <head>1:13</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,11 @@
+Started on Feb 25, 2021 11:07:00 AM
+Using strategy: Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 1.8.3.1'
+ > git ls-remote -h https://github.com/moonsri/Devops_GIT.git # timeout=10
+Found 5 remote heads on https://github.com/moonsri/Devops_GIT.git
+[poll] Latest remote head revision on refs/heads/master is: e58be8fbba15b358acf9e9c13616b7482b6047e0
+Done. Took 1 sec
+Changes found

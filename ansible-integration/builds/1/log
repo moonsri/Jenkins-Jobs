@@ -1,0 +1,33 @@
+Started by user [8mha:////4I6rgZuoPcSzDBRN+mvWZMUjq+8ZNr6iB7jHwi4w6eWjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/ansible-integration
+[ansible-integration] $ ansible-playbook /var/lib/jenkins/ansibleproject/tomcat_install_final.yml -i /var/lib/jenkins/ansibleproject/hosts -f 5 --vault-password-file /var/lib/jenkins/workspace/ansible-integration/vault6222197693293416103.password
+
+PLAY [webserver] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.2.30]
+
+TASK [Install tomcat tomcat-webapps tomcat-admin-webapps tomcat-docs-webapp] ***
+fatal: [192.168.2.30]: FAILED! => {"changed": false, "changes": {"installed": ["tomcat", "tomcat-webapps", "tomcat-admin-webapps", "tomcat-docs-webapp"]}, "msg": "You need to be root to perform this command.\n", "rc": 1, "results": ["Loaded plugins: fastestmirror\n"]}
+
+PLAY RECAP *********************************************************************
+192.168.2.30               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+FATAL: command execution failed
+hudson.AbortException: Ansible playbook execution failed
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:262)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:232)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.Build$BuildExecution.build(Build.java:197)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:514)
+	at hudson.model.Run.execute(Run.java:1907)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+ERROR: Ansible playbook execution failed
+Finished: FAILURE

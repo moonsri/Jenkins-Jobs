@@ -1,0 +1,12 @@
+Started on Feb 26, 2021 8:20:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 24b656e7613e55320ffa50cbbc36dc98b453c450 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 1.8.3.1'
+ > git ls-remote -h https://github.com/DevOpsHubIN/maven-project # timeout=10
+Found 5 remote heads on https://github.com/DevOpsHubIN/maven-project
+[poll] Latest remote head revision on refs/heads/master is: f9dbaf1ed9b6fead965896eadcc84e337e32eb74
+Done. Took 0.6 sec
+Changes found

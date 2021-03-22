@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions/>
+  <description>Create war file with Maven, then install tomcat in node1 and deploy the application</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.90">
+    <script>stage(&apos;Build&apos;) {
+    build &apos;cicd-mavenbuild&apos;
+}
+stage(&apos;Install&apos;){
+    build &apos;cicd-installtomcat&apos;
+}
+stage(&apos;Deploy&apos;){
+    build &apos;cicd-deploy&apos;
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

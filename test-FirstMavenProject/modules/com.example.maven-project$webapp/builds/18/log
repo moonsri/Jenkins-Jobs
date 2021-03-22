@@ -1,0 +1,63 @@
+[INFO] 
+[INFO] [1m------------------< [0;36mcom.example.maven-project:webapp[0;1m >------------------[m
+[INFO] [1mBuilding Webapp 1.0-SNAPSHOT                                       [3/3][m
+[INFO] [1m--------------------------------[ war ]---------------------------------[m
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-clean-plugin:2.4.1:clean (default-clean) @ webapp ---
+[INFO] Deleting /home/jenkins/workspace/test-FirstMavenProject/webapp/target
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-resources-plugin:2.5:resources (default-resources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/test-FirstMavenProject/webapp/src/main/resources
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-compiler-plugin:2.3.2:compile (default-compile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-resources-plugin:2.5:testResources (default-testResources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/test-FirstMavenProject/webapp/src/test/resources
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-surefire-plugin:2.11:test (default-test) @ webapp ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/jenkins/workspace/test-FirstMavenProject/webapp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-war-plugin:2.1.1:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [/home/jenkins/workspace/test-FirstMavenProject/webapp/target/webapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/jenkins/workspace/test-FirstMavenProject/webapp/src/main/webapp]
+[INFO] Webapp assembled in [51 msecs]
+[INFO] Building war: /home/jenkins/workspace/test-FirstMavenProject/webapp/target/webapp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] [8mha:////4CqcX8QtfYIGttInN4zfDyHzt+XaVW1gfzsLzCS4KyMPAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m--- maven-install-plugin:2.3.1:install (default-install) @ webapp ---
+[INFO] Installing /home/jenkins/workspace/test-FirstMavenProject/webapp/target/webapp.war to /home/jenkins/.m2/repository/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war
+[INFO] Installing /home/jenkins/workspace/test-FirstMavenProject/webapp/pom.xml to /home/jenkins/.m2/repository/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.pom
+[INFO] [1m------------------------------------------------------------------------[m
+[INFO] [1mReactor Summary:[m
+[INFO] 
+[INFO] Maven Project 1.0-SNAPSHOT ......................... [1;32mSUCCESS[m [  2.272 s]
+[INFO] Server ............................................. [1;32mSUCCESS[m [ 10.220 s]
+[INFO] Webapp 1.0-SNAPSHOT ................................ [1;32mSUCCESS[m [  2.983 s]
+[INFO] [1m------------------------------------------------------------------------[m
+[INFO] [1;32mBUILD SUCCESS[m
+[INFO] [1m------------------------------------------------------------------------[m
+[INFO] Total time: 18.155 s
+[INFO] Finished at: 2021-03-06T01:48:07Z
+[INFO] [1m------------------------------------------------------------------------[m
+Waiting for Jenkins to finish collecting data

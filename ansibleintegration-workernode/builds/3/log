@@ -1,0 +1,29 @@
+Started by user [8mha:////4I6rgZuoPcSzDBRN+mvWZMUjq+8ZNr6iB7jHwi4w6eWjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4JVTLXsiePmDy07fpMrer2RN1SFEAEUyU2qzmur0vCoUAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 in workspace /home/jenkins/workspace/ansibleintegration-workernode
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/moonsri/Ansible.git # timeout=10
+Fetching upstream changes from https://github.com/moonsri/Ansible.git
+ > git --version # timeout=10
+ > git --version # 'git version 1.8.3.1'
+ > git fetch --tags --progress https://github.com/moonsri/Ansible.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 4d898267f41a680b319b837d40b0faf1a5baf786 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4d898267f41a680b319b837d40b0faf1a5baf786 # timeout=10
+Commit message: "Update the repo with hostvars"
+ > git rev-list --no-walk d094f527089b1c88abba67d6a6233b7d314b2558 # timeout=10
+[ansibleintegration-workernode] $ ansible-playbook /home/jenkins/workspace/ansibleintegration-workernode/install_httpd.yml -f 5
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: webserver
+
+PLAY [webserver] ***************************************************************
+skipping: no hosts matched
+
+PLAY RECAP *********************************************************************
+
+Finished: SUCCESS

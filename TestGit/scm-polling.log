@@ -1,0 +1,12 @@
+Started on Mar 22, 2021 10:37:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision c7a15750eb1461a0fea246fbb5800b6bc81eb02f (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 1.8.3.1'
+ > git ls-remote -h https://github.com/moonsri/maven-project.git # timeout=10
+Found 5 remote heads on https://github.com/moonsri/maven-project.git
+[poll] Latest remote head revision on refs/heads/master is: c7a15750eb1461a0fea246fbb5800b6bc81eb02f - already built by 3
+Done. Took 0.49 sec
+No changes
